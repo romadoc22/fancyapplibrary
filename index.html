@@ -1,81 +1,40 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Parcel Sandbox</title>
   <meta charset="UTF-8" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body>
-  <div id="app" class="p-4">
-    <h1 class="mb-2 md:mb-4 font-semibold text-xl">Responsive Card Slider</h1>
-    <p class="mb-4 md:hidden">
-      <a href="https://js-7yx4xg.stackblitz.io" target="_blank" class="underline underline-offset-2">View this demo in
-        full size</a>
-    </p>
+  <p>
+    <a href="javascript:;" data-fancybox-trigger="gallery" data-fancybox-index="0">
+      <img src="https://lipsum.app/id/1/400x300" />
+    </a>
+  </p>
+  <div>
+    <a data-fancybox="gallery" data-src="https://lipsum.app/id/1/1024x768">
+      <img src="https://lipsum.app/id/1/100x75" />
+    </a>
 
-    <div class="max-w-6xl mx-auto">
-      <div id="cardSlider" class="mb-8 py-10 f-carousel bg-gray-50">
-        <div class="f-carousel__viewport px-12">
-          <figure class="f-carousel__slide">
-            <img class="mb-4 w-full rounded-lg" alt="" width="300" height="400"
-              data-lazy-src="https://source.unsplash.com/0Zx1bDv5BNY/300x400" />
-            <figcaption>
-              <h3 class="text-lg font-semibold">Lara</h3>
-              <p>CEO</p>
-            </figcaption>
-          </figure>
-          <figure class="f-carousel__slide">
-            <img class="mb-4 w-full rounded-lg" alt="" width="300" height="400"
-              data-lazy-src="https://source.unsplash.com/NPy59VPyYYg/300x400" />
-            <figcaption>
-              <h3 class="text-lg font-semibold">Celina</h3>
-              <p>CTO</p>
-            </figcaption>
-          </figure>
-          <figure class="f-carousel__slide">
-            <img class="mb-4 w-full rounded-lg" alt="" width="300" height="400"
-              data-lazy-src="https://source.unsplash.com/7jCYw6a2Wao/300x400" />
-            <figcaption>
-              <h3 class="text-lg font-semibold">Gislain</h3>
-              <p>Lead Developer</p>
-            </figcaption>
-          </figure>
-          <figure class="f-carousel__slide">
-            <img class="mb-4 w-full rounded-lg" alt="" width="300" height="400"
-              data-lazy-src="https://source.unsplash.com/xrWlGiv8m-4/300x400" />
-            <figcaption>
-              <h3 class="text-lg font-semibold">Adrien</h3>
-              <p>Full Stack Developer</p>
-            </figcaption>
-          </figure>
-          <figure class="f-carousel__slide">
-            <img class="mb-4 w-full rounded-lg" alt="" width="300" height="400"
-              data-lazy-src="https://source.unsplash.com/pQyIutdScOY/300x400" />
-            <figcaption>
-              <h3 class="text-lg font-semibold">Ruby</h3>
-              <p>Full Stack Developer</p>
-            </figcaption>
-          </figure>
-          <figure class="f-carousel__slide">
-            <img class="mb-4 w-full rounded-lg" alt="" width="300" height="400"
-              data-lazy-src="https://source.unsplash.com/WEDDt-u3q3o/300x400" />
-            <figcaption>
-              <h3 class="text-lg font-semibold">Lucas</h3>
-              <p>Sales Manager</p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
+    <a data-fancybox="gallery" data-src="https://lipsum.app/id/2/1024x768">
+      <img src="https://lipsum.app/id/2/100x75" />
+    </a>
 
-    <p>
-      <a href="https://fancyapps.com/" target="_blank" class="underline underline-offset-2">fancyapps.com</a>
-    </p>
+    <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1024x768">
+      <img src="https://lipsum.app/id/3/100x75" />
+    </a>
+    <a data-fancybox="gallery" data-src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__340.jpg" />
+    </a>
   </div>
-
-  <script type="module" src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+      //
+    });    
+  </script>
 </body>
 
 </html>
